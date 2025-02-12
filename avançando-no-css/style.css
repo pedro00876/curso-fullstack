@@ -1,5 +1,5 @@
 /* Position */
-
+/* 
 div {
     background-color: var(--bg-color);
     width: 60px;
@@ -12,27 +12,28 @@ div {
     border: 1px solid;
 } */
 
-.position {
-    background-color: var(--modal-color);
-    /* position: relative;
+/* .position {
+    background-color: var(--modal-color); */
+*/
+/* position: relative;
     bottom: 20px;
     left: 20px;
     z-index: auto; */
 
-    /* position: absolute;   usa-se quando se quer trabalhar em containers!!!
+/* position: absolute;   usa-se quando se quer trabalhar em containers!!!
     bottom: 20px;
     left: 20px; */
 
-    /* position: fixed;   usa-se quando se quer trabalhar com algo fixo.
+/* position: fixed;   usa-se quando se quer trabalhar com algo fixo.
     bottom: 20px;         Ex: um botão de dúvidas no canto inferior da tela.
     right: 20px; 
     z-index: auto; */
-    /* 
+/* 
     position: sticky;    usa-se para coloar em outro elemento quando se há um 
     top: 20px;           scroll, onde ele se baseia em um elemento pai
     z-index: -1; */
 
-}
+/* } 
 
 
 /* Variáveis */
@@ -42,6 +43,8 @@ div {
 }
 
 
+
+/* Flex Box */
 .container {
     border: dashed;
 }
@@ -52,3 +55,8 @@ div {
     background-color: hsl(var(--hue), 100%, 70%);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+}
