@@ -1,7 +1,7 @@
 /* Position */
 
 div {
-    background-color: black;
+    background-color: var(--bg-color);
     width: 60px;
     height: 60px;
     margin-bottom: 5px;
@@ -13,7 +13,7 @@ div {
 } */
 
 .position {
-    background-color: red;
+    background-color: var(--modal-color);
     /* position: relative;
     bottom: 20px;
     left: 20px;
@@ -27,9 +27,17 @@ div {
     bottom: 20px;         Ex: um botão de dúvidas no canto inferior da tela.
     right: 20px; 
     z-index: auto; */
-/* 
+    /* 
     position: sticky;    usa-se para coloar em outro elemento quando se há um 
     top: 20px;           scroll, onde ele se baseia em um elemento pai
     z-index: -1; */
 
 }
+
+
+/* Variáveis */
+:root {
+    --bg-color: black;
+    --modal-color: red
+}
+
