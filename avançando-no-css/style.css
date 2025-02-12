@@ -41,3 +41,14 @@ div {
     --modal-color: red
 }
 
+
+.container {
+    border: dashed;
+}
+
+.item {
+    --hue: 0;
+    text-align: center;
+    background-color: hsl(var(--hue), 100%, 70%);
+}
+
