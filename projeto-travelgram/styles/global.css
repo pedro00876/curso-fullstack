@@ -33,7 +33,7 @@ a {
 
 a:hover {
     color: var(--brand-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container {
