@@ -3,6 +3,10 @@ header {
     font: var(--text-md);
 }
 
+nav a {
+    font: var(--text-md)
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
