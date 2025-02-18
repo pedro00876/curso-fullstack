@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+
+}
+
+
+
 /* Position */
 /* 
 div {
@@ -14,7 +23,7 @@ div {
 
 /* .position {
     background-color: var(--modal-color); */
-*/
+
 /* position: relative;
     bottom: 20px;
     left: 20px;
@@ -37,7 +46,7 @@ div {
 
 
 /* Variáveis */
-:root {
+/* :root {
     --bg-color: black;
     --modal-color: red
 }
@@ -45,7 +54,7 @@ div {
 
 
 /* Flex Box */
-.container {
+/* .container {
     border: dashed;
 }
 
@@ -58,5 +67,80 @@ div {
 .container {
     display: flex;
     justify-content: center;
-    flex-direction: column ;
+    flex-direction: column;
+} */
+
+
+/* Grid */
+
+/* Container (Pai) */
+
+/* 
+- display: grid;
+- grid-template;
+   - grid-template-columns;
+   - grid-template-rows
+   - grid-template-areas
+*/
+
+
+/* Itens (Filhos) */
+
+/* 
+- grid-colum;
+   - grid-column-start;
+   - grid-column-end;
+- grid-row;
+   - grid-row-start
+   - grid-row-end
+- grid-area
+
+*/
+
+
+/* Columns */
+/* #app {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 2px solid green;
+}
+
+#app>div {
+    border: 1px solid red;
+}
+
+span {
+    border: 1px solid blue;
+} */
+
+
+
+/* Row */
+#app {
+    display: grid;
+    grid-template-areas:
+        "header main main"
+        "header main main"
+        "header footer aside";
+
+
+    height: 100vh;
+
+}
+
+* {
+    border: 1px solid red;
+}
+
+#app header {
+    grid-area: header;
+}
+
+#app main {
+    grid-area: main;
+}
+
+
+#app footer {
+    grid-area: footer;
 }
