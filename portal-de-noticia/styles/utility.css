@@ -24,10 +24,10 @@
     font: var(--h2);
 }
 
-.text-l {
+.text-lg {
     font: var(--h3);
 }
 
-.text-2xl {
+.text-sm {
     font: var(--text-sm);
 }
