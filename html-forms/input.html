@@ -8,16 +8,26 @@
 </head>
 
 <body>
+
+    <!-- Text -->
     <form id="text">
         <input required="Você precisa assinar" value="pedro" type="text" name="nome">
         <button>submit</button>
     </form>
 
-    --------------------------
-    --------------------------
 
+
+    <!-- Number -->
     <form id="number">
         <input min="18" max="60" type="number">
+        <button>submit</button>
+    </form>
+
+
+
+    <!-- Email -->
+    <form>
+        <input type="email" name="mail" pattern=".+gmail\.com" required title="Precisa ter um email gmail">
         <button>submit</button>
     </form>
 </body>
