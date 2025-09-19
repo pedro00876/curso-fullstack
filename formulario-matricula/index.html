@@ -83,16 +83,17 @@
               </div>
             </fieldset>
 
+            
             <fieldset class="address">
               <legend>Endereço residencial</legend>
 
-              <div class="inputwrapper">
+              <div class="input-wrapper">
                 <label for="cep">CEP</label>
                 <input type="text" id="cep" name="cep" />
               </div>
 
               <div class="flex">
-                <div class="inputwrapper flex-2">
+                <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
                   <input
                     type="text"
@@ -105,13 +106,13 @@
               </div>
 
               <div class="flex">
-                <div class="inputwrapper flex-1">
+                <div class="input-wrapper flex-1">
                   <label for="number">Número</label>
                   <input type="number" id="number" name="number" />
                 </div>
 
                 <div class="flex">
-                <div class="inputwrapper flex-2">
+                <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
                   <input
                     type="text"
@@ -124,9 +125,32 @@
               </div>
 
               <div class="flex">
-                <div class="inputwrapper flex-1">
+                <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
                   <input type="state" id="state" name="state" value="SP" disabled />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="guardian">
+              <legend>Informações do ressponsável</legend>
+              <div class="input-wrapper">
+                <label for="guardian">Nome do ressponsável</label>
+                <input type="text" id="guardina" name="guardian">
+                <small>Principal ressponsável legal e contato de emergência</small>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input type="tell" id="phone" name="phone" placeholder="(79) 9.99897-9980">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" required placeholder="email@email.com" >
+                <div class="error">
+                  <img src="assets/icons/alert-circle.svg" alt="ícone de um círculo vermelho">
+                  <span>Insira um e-mail válido</span>
                 </div>
               </div>
             </fieldset>
@@ -153,3 +177,7 @@
     </div>
   </body>
 </html>
+
+
+<!-- aaaaa -->
+ <!-- aaaa -->
