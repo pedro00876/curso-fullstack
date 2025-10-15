@@ -2,13 +2,13 @@
   --bg-color: #663399;
 }
 
-body {
-  background-color: var(--bg-color);
-  color: #fff;
-}
-
 @media screen and (max-width: 576px) {
   :root {
     --bg-color: #ff4500;
   }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #fff;
 }
