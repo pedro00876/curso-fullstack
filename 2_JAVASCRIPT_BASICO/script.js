@@ -24,7 +24,7 @@ console.log(Product)
 
 //////////////////////////////////////////////////////////////////////////////
 
-// 1 - let
+// 3 - let
 // Declarando variável
 
 let user = 'Pedrinho'
@@ -32,3 +32,10 @@ let user = 'Pedrinho'
 // Substituindo o valor de let
 
 user = 'Pedro'
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 4 - const
+// Declarando variável constante (não é possivel alterar o valor dela)
+
+const user = 'Pedro'
