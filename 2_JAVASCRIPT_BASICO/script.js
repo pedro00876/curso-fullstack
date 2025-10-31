@@ -49,3 +49,32 @@ const username = 'Elias'
 
 // RECOMENDAÇÕES camelCase
 let productName = 'Ventilador'
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 6 - Tipo de dados
+// String
+let Name = 'Pedro'
+console.log(typeof Name)
+
+// template literals
+
+let nameUser = 'Pedro  Elias'
+let email = 'pedro@gmail.com'
+
+// passar mais de um parâmetro
+console.log(nameUser, email, 'teste')
+
+let message = 'Olá, ' + nameUser + ' ! Você logou com o e-mail ' + email
+console.log(message)
+
+// template literal!!!
+
+console.log(`Olá, ${nameUser}. Você logou com o e-mail ${email}`)
+
+// Number
+console.log(typeof 5)
+
+// boolean
+let isLoading = true
+console.log(typeof isLoading)
