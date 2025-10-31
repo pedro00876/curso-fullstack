@@ -39,3 +39,13 @@ user = 'Pedro'
 // Declarando variável constante (não é possivel alterar o valor dela)
 
 const user = 'Pedro'
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 5 - nomes para variaveis
+//case-sensitive
+const userName = 'Pedro'
+const username = 'Elias'
+
+// RECOMENDAÇÕES camelCase
+let productName = 'Ventilador'
