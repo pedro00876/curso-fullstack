@@ -118,8 +118,17 @@ console.log(avg)
 let one = 1
 let two = 2
 
+// Igual a
 console.log(one == 1)
 console.log(two == 2)
 
+// Diferente de
 console.log(two != 1)
 console.log(one != 1)
+
+//Estritamente igual
+let three = 3
+let four = 4
+
+console.log(four === 4)
+console.log(four !== 3)
