@@ -132,3 +132,33 @@ let four = 4
 
 console.log(four === 4)
 console.log(four !== 3)
+
+// Maior, menor ou igual
+let saldo = 500
+let pagamento = 120
+
+console.log(saldo > pagamento)
+console.log(saldo < pagamento)
+
+saldo = 120
+
+console.log(saldo >= pagamento)
+
+// Operadores de atribuição
+let value
+
+value = 5
+
+// operadores lógicos
+
+let email1 = true
+let password = false
+
+// AND (E) &&
+console.log(email1 && password)
+
+// OR (OU) ||
+console.log(email1 || password)
+
+// NOT (NEGAÇÃO) !
+console.log(!password)
