@@ -100,3 +100,15 @@ console.log(number)
 
 number--
 console.log(number)
+
+// 8 - Ordem de precedência
+// grouping operator
+
+let total1 = 2 + 3 * 4
+console.log(total1)
+
+let total2 = (2 + 3) * 4
+console.log(total2)
+
+let avg = (9.5 + 7 + 5) / 3
+console.log(avg)
