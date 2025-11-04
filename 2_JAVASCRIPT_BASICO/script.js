@@ -82,6 +82,7 @@ console.log(typeof isLoading)
 //////////////////////////////////////////////////////////////////////////////
 
 // 7 - Expressões e operadores
+// Operadores aritmétricos
 
 console.log('SOMA: ', 12 + 2)
 console.log('SUBTRAÇÃO: ', 12 - 2)
@@ -89,3 +90,13 @@ console.log('MULTIPLICAÇÃO: ', 12 * 2)
 console.log('DIVISÃO', 12 / 2)
 console.log('RESTO DA DIVISÃO', 12 % 2)
 console.log('EXPONENCIAL', 12 ** 2)
+
+// incremento e decremento
+
+let number = 10
+number++
+
+console.log(number)
+
+number--
+console.log(number)
