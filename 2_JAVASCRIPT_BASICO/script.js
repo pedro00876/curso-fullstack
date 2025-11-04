@@ -112,3 +112,14 @@ console.log(total2)
 
 let avg = (9.5 + 7 + 5) / 3
 console.log(avg)
+
+// Operadores lógicos
+
+let one = 1
+let two = 2
+
+console.log(one == 1)
+console.log(two == 2)
+
+console.log(two != 1)
+console.log(one != 1)
