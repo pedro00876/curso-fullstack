@@ -78,3 +78,14 @@ console.log(typeof 5)
 // boolean
 let isLoading = true
 console.log(typeof isLoading)
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 7 - Expressões e operadores
+
+console.log('SOMA: ', 12 + 2)
+console.log('SUBTRAÇÃO: ', 12 - 2)
+console.log('MULTIPLICAÇÃO: ', 12 * 2)
+console.log('DIVISÃO', 12 / 2)
+console.log('RESTO DA DIVISÃO', 12 % 2)
+console.log('EXPONENCIAL', 12 ** 2)
