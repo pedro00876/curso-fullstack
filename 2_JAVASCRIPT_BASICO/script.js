@@ -101,6 +101,8 @@ console.log(number)
 number--
 console.log(number)
 
+//////////////////////////////////////////////////////////////////////////////
+
 // 8 - Ordem de precedência
 // grouping operator
 
@@ -162,3 +164,69 @@ console.log(email1 || password)
 
 // NOT (NEGAÇÃO) !
 console.log(!password)
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 9 - Estrutura de condição
+// Operador condicional ternario
+
+let age = 21
+
+console.log(age >= 18 ? 'Você pode dirigir' : 'Você não pode dirigir')
+
+// Falsy e truthy
+/*
+  Falsy quando um valor é considerado false e truthy quando é considerado verdadeiro
+  em contextos onde um boolean é obrigatorio (condicionais e loops)
+*/
+
+console.log('### Exemplos de Falsy ###')
+console.log(0 ? 'Verdadeiro' : 'Falso')
+console.log('' ? 'Verdadeiro' : 'Falso')
+console.log(null ? 'Verdadeiro' : 'Falso')
+console.log(undefined ? 'Verdadeiro' : 'Falso')
+
+console.log('### Exemplos de Truthy ###')
+console.log(true ? 'Verdadeiro' : 'Falso')
+console.log({} ? 'Verdadeiro' : 'Falso')
+console.log([] ? 'Verdadeiro' : 'Falso')
+console.log(1 ? 'Verdadeiro' : 'Falso')
+
+//Condição if (se) e else (se não)
+let hour = 11
+
+if (hour >= 12) {
+  console.log('Boa tarde!')
+} else {
+  console.log('bom dia!')
+}
+
+// if else if
+
+let Hour = 18
+
+if (Hour < 12) {
+  console.log('Bom dia!')
+} else if (Hour >= 12 && Hour <= 18) {
+  console.log('Boa tarde!')
+} else {
+  console.log('Boa tarde!')
+}
+
+// switch
+let options = 1
+
+switch (option) {
+  case 1:
+    console.log('Consultar pedido')
+    break
+  case 2:
+    console.log('Falar com atendente')
+    break
+  case 3:
+    console.log('Cancelar pedido')
+
+  default:
+    console.log('Opção inválida')
+    break
+}
