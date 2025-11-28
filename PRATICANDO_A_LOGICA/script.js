@@ -76,13 +76,75 @@ if (numPositivo >= 0) {
 
 "Aprovado", "Recuperação" ou "Reprovado".* */
 
+const nota1 = 10
+const nota2 = 10
+const media = (nota1 + nota2) / 2
+
+if (media >= 7) {
+  console.log('Parabéns, você foi aprovado!')
+} else if (media < 7 && media >= 4) {
+  console.log('Voc~e está de recuperação')
+} else {
+  console.log('Você está reprovado')
+}
+
 // 13. Verifique se um ano informado é bissexto.
+const diasAno = 366
+
+if (diasAno > 365) {
+  console.log('O ano é BISSEXTO')
+} else {
+  console.log('O ano é normal')
+}
 // 14. Dado um número de 1 a 7, mostre qual é o dia da semana correspondente.
+switch (option) {
+  case 1:
+    console.log('Domingo')
+    break
+  case 2:
+    console.log('Segunda')
+    break
+  case 3:
+    console.log('Terça')
+    break
+  case 4:
+    console.log('Quarta')
+    break
+  case 5:
+    console.log('Quinta')
+    break
+  case 6:
+    console.log('Sexta')
+    break
+  case 7:
+    console.log('Sabado')
+
+  default:
+    console.log('Opção inválida')
+    break
+}
+
 /* **15. Simule um sistema simples de login:
 
 – usuário correto
 – senha correta
 Se qualquer um estiver errado, mostre mensagem específica.** */
+const passwordCorreto = '@Pedro2006'
+const emailCorrreto = 'pedro@gmail.com'
+
+const password = 'pedro123'
+const email = 'pedro@outlook.com'
+
+if (password === passwordCorreto && email === emailCorrreto) {
+  console.log('Você entrou!')
+} else {
+  if (password !== passwordCorreto) {
+    console.log('A senha está incorreta')
+  }
+  if (email !== emailCorrreto) {
+    console.log('O email está incorreto')
+  }
+}
 
 /* **16. Crie um código que tente converter uma string inválida em número ("abc").
 
