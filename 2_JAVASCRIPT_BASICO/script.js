@@ -337,3 +337,7 @@ execute('Download do arquivo...', callback)
 execute('Update do arquivo', () =>
   console.log('Função de callback com uma função anônima')
 )
+
+//////////////////////////////////////////////////////////////////////////////
+
+// 12 - DOM (Document Object Model)

@@ -1,0 +1,4 @@
+.input-error,
+.input-error:focus {
+  border-color: #e21a43;
+}
