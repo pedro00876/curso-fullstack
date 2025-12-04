@@ -82,3 +82,43 @@ Input.addEventListener('keydown', e => {
 Input.addEventListener('keypress', () => {
   console.log(e.key)
 })
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Expressões regulares
+
+const inputRegex = document.querySelector('input')
+const formRegex = document.querySelector('form')
+
+inputRegex.addEventListener('input', () => {
+
+    const value = inputRegex.value
+    const regex = /\D+/g
+
+    // Rtorna o padrão encontrado na string
+    // console.log(value.match(regex))
+
+
+    // Testa se atende o padrão
+    // const isValid = regex.test(value)
+    // console.log(isValid)
+
+
+})
+
+formRegex.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const Value = input.value.replace(regex, 'x')
+
+    console.log(Value)
+
+    const Regex = /\d+/g
+
+    if(!Regex.test(Value)){
+        console.log(Value)
+    } else {
+        alert('Valor inválido. Por favor digite corretamente')
+
+    }
+})
