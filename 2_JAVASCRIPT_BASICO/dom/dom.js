@@ -109,7 +109,7 @@ inputRegex.addEventListener('input', () => {
 
 formRegex.addEventListener('submit', (e) => {
     e.preventDefault()
-    const Value = input.value.replace(regex, 'x')
+    const Value = input.value.replace(Regex, 'x')
 
     console.log(Value)
 
@@ -122,3 +122,5 @@ formRegex.addEventListener('submit', (e) => {
 
     }
 })
+
+// a
