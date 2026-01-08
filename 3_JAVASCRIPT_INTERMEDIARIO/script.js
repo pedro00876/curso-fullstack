@@ -229,3 +229,79 @@ console.log(messagGE.indexOf('JS'))
 
 // verifica se existe a palavra na string
 console.log(message.includes('JS'))
+
+/////////////////////////////////////////////////////////////////////
+// ARRAY //
+
+//Criando Array com construtor
+const newArray = new Array()
+console.log(newArray.length)
+
+const available = new Array(10)
+console.log(available.length)
+
+//Criando e acessando um array
+let fruits = ['Apple', 'Banana', 'Orange']
+console.log(fruits.length)
+
+// Acessa o item pelo indice
+console.log(fruits[2])
+
+// Acessa a lista dinamicamente
+console.log(fruits[fruits.length - 1])
+
+// Convertendo uma string para array
+let fullname = 'Pedro Elias Chagas Silva'
+
+// Cria um array com os nomes separandos pelo espaço
+console.log(fullname.split(' '))
+
+// Cria um array com as letras'
+console.log(Array.from(fullname))
+
+// Adicionando ou removendo um item do array
+let usuario = []
+
+// Adiciona um item ao final do array
+usuario.push('Pedro')
+usuario.push('Roni')
+usuario.push('João')
+
+// Adiciona um item ao inicio do array
+usuario.unshift('Maria')
+
+// Remove um item do inicio do array
+usuario.shift()
+
+// Remove um item do final do array
+usuario.pop()
+
+console.log(usuario)
+
+// Usando o índice
+let frutas = ['Maçã', 'Banana', 'Morango', 'Melancia']
+
+// Encontra e retorna o indice do elemento no Array
+let position = frutas.indexOf('Morango')
+console.log(position)
+
+// Remove um item pela posição do indice (1 é o número de items para remover)
+frutas.splice(position, 1)
+console.log(frutas)
+
+// Quais elementos o array aceita
+let myArray = [
+  'Um texto',
+  10,
+  true,
+  function () {
+    console.log('Função dentro de um array')
+  },
+  {
+    name: 'Pedro',
+    email: 'pedro.chagas',
+  },
+]
+
+// Verificando se existe conteudo no array
+console.log(fruits.includes('Apple'))
