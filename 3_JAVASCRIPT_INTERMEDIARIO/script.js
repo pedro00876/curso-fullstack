@@ -305,3 +305,121 @@ let myArray = [
 
 // Verificando se existe conteudo no array
 console.log(fruits.includes('Apple'))
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// ESTRUTURA DE REPETIÇÃO
+
+// While: executa até que a condição seja VERDADEIRA
+let exucute = true
+
+while (exucute) {
+  let response = window.prompt('Deseja continuar: 1 (SIM) ou 2 (NÃO)')
+
+  if (response === 2) {
+    exucute = false
+  }
+}
+
+// Loop infinito
+let valUe = true
+while (valUe) {
+  // console.log("Executando...")
+}
+
+/*
+ DO WHILE: repete até que a condição especificada seja VERDADEIRAMENTE. No entanto, a instrução
+será executada pelo menos uma vez antes da condição ser verificada.
+ */
+
+let valUE = 0
+do {
+  value++
+  console.log(valUE)
+} while (valUe < 10)
+
+console.log('Segue o fluxo')
+
+/*
+FOR repete até que a condição especiicada seja FALSA.
+
+ - Variável de controle
+ - condição
+ - incremento ou decremento de variavel de controle
+*/
+
+for (i = 0; i < 10; i++) {
+  console.log(i)
+}
+
+// exemplo da tabuada
+let number = 7
+
+for (i = 0; i <= 10; i++) {
+  console.log(`${number} X ${step} =  ${number * step}`)
+}
+
+// For... in executa iterações a partir de um objeto e percorre as propriedades
+let person3 = {
+  name: 'Pedro',
+  surname: 'Elias',
+  email: 'pedro@gmail.com',
+}
+
+for (let property in person3) {
+  // Exibe o nome da propriedade
+  console.log(property)
+
+  // Exibe o valor da propriedade
+  console.log(person3[property])
+}
+
+// For... of itera os valores de um objeto iteravel
+let estudantes = ['Pedro', 'Elias', 'Chagas']
+
+for (students of estudantes) {
+  console.log(students)
+}
+
+// Break encerra a execução de repetição ou switch para seguir para instrução seguinte
+
+/*
+let cadastrar = 3
+
+switch (option) {
+  case 1:
+    console.log('Cadastrar')
+    break
+
+  case 2:
+    console.log('Atualizar')
+    break
+  case 3:
+    console.log('Remover')
+    break
+
+  default:
+    console.log('Opção invalida')
+    break
+}
+*/
+
+//Utilizando o break para finalizar a repetição
+
+for (let i = 0; i < 10; i++) {
+  if ((i = 5)) {
+    break
+  }
+  console.log(i)
+}
+
+/*
+Continue encerra (pula) a execução das instruções na iteração atual
+e continua a execução do loo com a proxim aiteração
+*/
+
+for (i = 0; i < 10; i++) {
+  if ((i = 5)) {
+    continue
+  }
+  console.log(i)
+}
