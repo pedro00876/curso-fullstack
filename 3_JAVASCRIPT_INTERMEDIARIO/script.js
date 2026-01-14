@@ -423,3 +423,66 @@ for (i = 0; i < 10; i++) {
   }
   console.log(i)
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Data e Hora no JS
+
+//Data e hora atual
+console.log(new Date())
+
+//numero de milessegundos
+console.log(new Date().getDate())
+
+// Definir uma data e hora especifica
+console.log(new Date(2024, 6, 3))
+
+// Define data e hora
+console.log(new Date(2024, 6, 4, 14, 30, 0))
+console.log(new Date('2026-06-27T14:30:00'))
+
+//Métodos para trabalhar com data e hora
+let DAte = new Date('2025-01-14T16:15:00')
+
+// Dia da semana de 0 a 6 (domingo é 0)
+console.log(DAte.getDay())
+
+// Dia do mês
+console.log(DAte.getDate())
+
+//Mês
+console.log(DAte.getMonth())
+
+// Formatando uma data e hora
+let DATE = new Date('2025-02-13T14:30:00')
+
+//formata para o dia sempre ter 2 dígitos
+console.log(date.getDate().toString().padStart(2, '0'))
+
+//Formata para o mes sempre ter 2 dígitos
+let month = (date.getMonth() + 1).toString().padStart(2, '0')
+console.log(month)
+
+let ano = DATE.getFullYear()
+let mes = DATE.getMonth()
+let dia = DATE.getDay()
+
+console.log(`${day}/${mes}/${dia}`)
+
+// Convertendo uma data para string
+
+//Converte para data
+console.log(DATE.toString())
+
+//Retorna somente a data
+console.log(DATE.toDateString())
+
+let dataFormatada = new Date('2025-07-02T16:31:00')
+console.log(dataFormatada.toLocaleDateString())
+console.log(dataFormatada.toLocaleTimeString())
+
+//Usando o toLocaleString
+console.log(
+  dataFormatada.toLocaleString(pt - BR, {
+    dateStyle: 'short',
+  })
+)
