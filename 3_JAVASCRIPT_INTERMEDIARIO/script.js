@@ -486,3 +486,92 @@ console.log(
     dateStyle: 'short',
   })
 )
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Classes em JavaScript
+
+/*
+Classe é um modelo para criar objetos com propriedades e métodos
+Sintaxe de classe foi introduzida no ES6 (ECMAScript 2015)
+*/
+
+//Criando uma classe com o método constructor
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+}
+
+const person = new Person('Pedro', 19)
+
+//Criando propriedades de uma classe
+class Product {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+const producto = new Product('Teclado')
+console.log(producto.name)
+
+const producto1 = new Product('Mouse')
+console.log(producto1.name)
+
+// Adicionando métodos a uma classe
+class User {
+  constructor(name, email) {
+    this.name = name
+    this.age = email
+  }
+
+  sendEmail() {
+    console.log(`E-mail enviado para ${this.email}, do usuário ${this.name}`)
+  }
+}
+
+const usere = new User('Pedro', 'pedro@gmail.com')
+usere.sendEmail()
+
+//Método estático
+class Usuario {
+  static showMessage(message) {
+    console.log(message)
+  }
+}
+
+//const userr = new Usuario('Pedro')
+//userr.showMessage()
+
+Usuario.showMessage('Mensagem de usuário')
+
+//Herança de classes
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+
+  speak() {
+    console.log(`${this.name} emite o som`)
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log(`${this.name} Au Au`)
+  }
+}
+const dog = new Dog()
+dog.name = 'Rex'
+dog.speak()
+
+class cat extends Animal {
+  speak() {
+    console.log(`${this.name} Miau Miau`)
+  }
+}
+const cat = new cat()
+cat.name = 'Mingau'
+cat.speak()
+
+// Sobrescrevendo métodos
