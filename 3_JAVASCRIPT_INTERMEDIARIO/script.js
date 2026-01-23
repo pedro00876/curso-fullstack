@@ -575,3 +575,11 @@ cat.name = 'Mingau'
 cat.speak()
 
 // Sobrescrevendo métodos
+class Bird extends Animal {
+  speak() {
+    console.log(`${this.name} Piu Piu`)
+  }
+}
+const bird = new Bird()
+bird.name = 'Pardal'
+bird.speak()
