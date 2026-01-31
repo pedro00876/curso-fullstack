@@ -583,3 +583,25 @@ class Bird extends Animal {
 const bird = new Bird()
 bird.name = 'Pardal'
 bird.speak()
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Criando um Objeto Prototype
+
+const adressPrototype = {
+  city: 'São Paulo',
+  postal_code: '12345-678',
+  country: 'Brasil',
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Como utilizar classes para lidar com exceções
+let objeto = []
+
+try {
+  obj.execute()
+} catch (error) {
+  if (error instanceof TypeError) {
+    console.log('Tipo de erro específico tratado aqui.')
+  }
+}
