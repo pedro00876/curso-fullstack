@@ -194,3 +194,99 @@ const sum = valoreS.reduce((accumulator, currentValue, index) => {
 
   return accumulator + currentValue
 }, 0)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Imutabilidade
+
+const adress1 = {
+  street: 'Av. Maria Pastora',
+  number: 260,
+}
+
+// Isso não é uma cópia, é uma referência
+// const adress2 = adress1
+// adress2.number = 20
+
+// Aqui estamos criando um novo objeto  utilizando as propriedades e valores de adress1.
+const adress2 = { ...adress1 }
+adress2.number = 394
+
+console.log(adress1, adress2)
+
+//Exemplo com Array
+const list1 = ['Banana', 'Maçã', 'laranja']
+const list2 = { ...list1 }
+list2.push('Melancia')
+
+console.log(list1, list2)
+
+//Shallow copy (cópia superficial): não pega o s itens alinhados.
+const htmlCourse = {
+  course: 'HTML',
+  studentes: [{ name: 'Pedro', email: 'pedro.elias@gmail.com' }],
+}
+
+/*
+const jsCourse = {
+  ...htmlCourse,
+  course: 'JavaScript',
+}
+*/
+
+// Vai modificar o htmlCourse também students é uma referencia e não uma cópia.
+//jsCourse.push([{name: 'João', email: 'joao.chagas@gmail.com'}])
+
+// Deep Copy (cópia profunda)
+const jsCourse = {
+  ...htmlCourse,
+  course: 'JavaScript',
+  studentes: [...htmlCourse.studentes],
+}
+
+jsCourse.studentes.push({ nome: 'João', email: 'joao@gmail.com' })
+
+console.log(htmlCourse, jsCourse)
+
+//Shallow freezing
+const book = {
+  title: 'Objetos imutaveis',
+  category: 'javascript',
+  author: {
+    name: 'Pedro',
+    email: 'pedro.chagas@gmail.com',
+  },
+}
+
+//O js em si não impõe restrições à modificações dos objetos.
+//book.category = 'HTML'
+
+//Congela o objeto e impede amodificação.
+Object.freeze(book)
+book.category = 'CSS' // Não modifica
+
+// O object não impde modificações profundas em objetos alinhados
+book.author.name = 'João'
+
+console.log(book)
+
+// Deep freeze
+function deepFreeze(object) {
+  //Obtém um array com todas as propriedades do objeto
+  const props = Reflect.ownKeys(object)
+
+  //Itera sobre todas as propriedades do objeto
+  for (const prop of props) {
+    //obtem o valor associado a propriedade atual
+    const value = object[prop]
+
+    //Verifica se o valor é um objeto oou uma função
+    if ((value && typeof value === 'object') || typeof value === 'function') {
+      deepFreeze(value)
+    }
+  }
+
+  //Retrona objeto imutavel
+  return Object.freeze(object)
+}
+
+deepFreeze(book)
