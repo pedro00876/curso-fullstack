@@ -290,3 +290,22 @@ function deepFreeze(object) {
 }
 
 deepFreeze(book)
+
+//Manipulando dados imutaveis
+
+const updatedBook = {
+  ...book,
+  title: 'Criando um front-end moderno',
+  category: 'html',
+}
+
+//Original intacto
+console.log(book)
+
+//Modificado
+console.log(updatedBook)
+
+// Utilizando operador de desestruturação (rest operator) para remover propriedades.
+
+const { category, ...bookWithoutCategory } = book
+console.log(bookWithoutCategory)
