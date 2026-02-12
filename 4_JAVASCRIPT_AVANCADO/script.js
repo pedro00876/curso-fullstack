@@ -309,3 +309,5 @@ console.log(updatedBook)
 
 const { category, ...bookWithoutCategory } = book
 console.log(bookWithoutCategory)
+
+// ////
